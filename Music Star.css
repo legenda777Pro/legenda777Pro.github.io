@@ -301,3 +301,9 @@ button div {
 	font-weight: normal;
 	src: url("https://assets.codepen.io/240751/Aspekta-300.woff2") format("woff2");
 }
+#clock{
+  font-size: 50px;
+  color: white;
+  display: flex;
+justify-content: center;
+}

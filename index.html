@@ -10,8 +10,11 @@
 <body>
    <header>
     <div class="navi">
-        <img class="icons" src="icon.jpg" alt="">
+        <img class="icons" src="img/icon.jpg" alt="">
         <span class="homes">Home</span>
+        <span id="clock">
+            <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+        </span>
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
@@ -20,9 +23,9 @@
         
             <ul class="menu__box">
               <li ><a class="menu__item home" href="#">Home</a></li>
-                    <li><a class="menu__item" href="Music Star Chat.html">Chat</a></li>
-                    <li><a class="menu__item" href="Music Star News.html">News</a></li>
-                    <li><a class="menu__item" href="Music Star Albums.html">Albums</a></li>
+                    <li><a class="menu__item" href="Chat.html">Chat</a></li>
+                    <li><a class="menu__item" href="News.html">News</a></li>
+                    <li><a class="menu__item" href="Albums.html">Albums</a></li>
                     <li><a class="menu__item" href="#">Soon</a></li>
             </ul>
           </div>
@@ -61,7 +64,7 @@
     </div>
 </div>
 <div >
-    <img class="ms-img" src="Music Star.jpg" alt="Dont Work img">
+    <img class="ms-img" src="img/Music Star.jpg" alt="Dont Work img">
 </div>
     </div>
    </main> 
@@ -75,8 +78,25 @@
                 
             </span>
         </p>
-        <p>V1.0</p>
+        <p>V1.2</p>
     </div>
    </footer>
 </body>
+<script>
+    function update() {
+let clock = document. getElementById('clock');
+let date = new Date();
+let hours = date. getHours ();
+28
+if (hours < 10) hours = '0' + hours;
+clock.children [0] .innerHTML = hours;
+let minutes = date. getMinutes ();
+if (minutes < 10) minutes = '0' + minutes;
+clock.children [1] .innerHTML = minutes;
+let seconds = date.getSeconds ();
+if (seconds < 10) seconds = '0' + seconds;
+clock.children [2] .innerHTML = seconds;
+}
+setInterval (update, 1000);
+</script>
 </html>
