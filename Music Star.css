@@ -39,6 +39,8 @@ right: 0px;
     margin-top: 10px;
     border-radius: 10px;
     padding: 5px;
+    display: block;
+    text-align: center;
 }
 .container{
     display: flex;
@@ -62,6 +64,8 @@ margin: 0 auto;
 .subs-img{
     height: 40px;
     width: 40px;
+    position: relative;
+top: 5px;
 }
 
 
@@ -304,6 +308,9 @@ button div {
 #clock{
   font-size: 50px;
   color: white;
-  display: flex;
-justify-content: center;
+ 
+}
+.subs-text{
+  position: relative;
+bottom: 5px;
 }
