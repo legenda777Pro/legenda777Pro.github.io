@@ -12,6 +12,8 @@ a{
     right: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
+    box-shadow: 0px 0px 20px 5px lightgray;
+  
 }
 .ms-img{
     width: 30vw;
@@ -314,4 +316,7 @@ button div {
 .subs-text{
   position: relative;
 bottom: 5px;
+}
+.audi{
+  width: 1px;
 }
